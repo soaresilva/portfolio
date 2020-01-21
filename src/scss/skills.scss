@@ -1,0 +1,104 @@
+.skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color5;
+    div {
+        display: flex;
+        position: relative;
+        background-color: $color4;
+        margin: 5px 120px;
+    }
+    .skill {
+        width: 5em;
+        background-color: black;
+        font-size: 2em;
+        color: white;
+        padding-left: .3em;
+    }
+    .bar {
+        background-color: $color2;
+        width: 50vw;
+        flex-basis: 0;
+    }
+    .padding {
+        flex-basis: 0;
+    }
+    .number {
+    background-color: $color4;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: .5em;
+    }
+    .htmlbar {
+        .bar {
+            flex-grow: 80;
+        }
+        .padding {
+            flex-grow: 20;
+        }
+    }
+    .cssbar {
+        .bar {
+            flex-grow: 80;
+        }
+        .padding {
+            flex-grow: 20;
+        }
+    }
+    .jsbar {
+        .bar {
+            flex-grow: 70;
+        }
+        .padding {
+            flex-grow: 30;
+        }
+    }
+    .reactbar {
+        .bar {
+            flex-grow: 60;
+        }
+        .padding {
+            flex-grow: 40;
+        }
+    }
+    .jquerybar {
+        .bar {
+            flex-grow: 70;
+        }
+        .padding {
+            flex-grow: 30;
+        }
+    }
+    .phpbar {
+        .bar {
+            flex-grow: 60;
+        }
+        .padding {
+            flex-grow: 40;
+        }
+    }
+    .laravelbar {
+        .bar {
+            flex-grow: 60;
+        }
+        .padding {
+            flex-grow: 40;
+        }
+    }
+    .uxbar {
+        .bar {
+            flex-grow: 90;
+        }
+        .padding {
+            flex-grow: 10;
+        }
+    }
+}
+// for each bar in each skill: flex-grow: 80; <- where 80 is the percentage
+// for each padding in each skill: flex-grow: remaining
