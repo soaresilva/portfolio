@@ -13,3 +13,29 @@ $color2: rgba(0, 47, 167, 1);
 $color3: rgba(48, 102, 190, 1);
 $color4: rgba(180, 197, 228, 1);
 $color5: rgba(251, 255, 241, 1);
+
+$onyx: $color1;
+$ikb: $color2;
+$cerulean: $color3;
+$lightsteel: $color4;
+$ivory: $color5;
+
+.onyx {
+    color: $color1;
+}
+
+.ikb {
+    color: $color2;
+}
+
+.cerulean {
+    color: $color3;
+}
+
+.lightsteel {
+    color: $color4;
+}
+
+.ivory {
+    color: $color5;
+}
