@@ -6,5 +6,42 @@
 
 html, body {
     font-family: "Alegreya Sans", sans-serif;
+    width: 100pw;
+    background-color: white;
+    // height: 100vh;
+    padding: 0;
+    margin: 0;
 }
 
+nav {
+    background-color: $color1;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    #logobox {
+        position: relative;
+        width: 15%;
+        max-height: 2em;
+        flex-grow: 0;
+        // margin: 0;
+        img {
+            max-height: 3em;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+    }
+    a {
+        padding: 0.25em;
+        // flex-grow: 1;
+    }
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
