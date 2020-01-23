@@ -1,11 +1,11 @@
 @import '_colors.scss';
 
-
 .findme {
     width: 100%;
     background-color: $color1;
-    height: 30vh;
+    height: 50vh;
     h1 {
         padding: 1em;
+        color: $color4;
     }
 }
