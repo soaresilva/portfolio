@@ -1,0 +1,19 @@
+.welcome {
+    background-color: $color4;
+    font-size: 1em;
+    text-align: center;
+    flex-direction: column;
+    padding: 1em;
+    font-size: 2em;
+    margin: 1em 0em; //maybe I don't want this margin
+    h1 {
+        color: $color3;
+        margin: 0;
+        padding-top: 0;
+    }
+    h2 {
+        color: $color3;
+        margin: 0;
+        font-weight: 400;
+    }
+}
