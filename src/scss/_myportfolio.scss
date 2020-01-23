@@ -49,6 +49,7 @@
                 margin-bottom: 2em;
                 height: 50%;
             }
+
             @media (max-width: 768px) {
                 max-width: 46%;
                 margin-bottom: 2em;
@@ -67,7 +68,7 @@
             @media (min-width: 1200px) {
                 width: 32%;
                 margin-bottom: 2em;
-                height: 75vh;
+                height: 75%;
                 p {
                     font-size: 1.5rem;
                 }
@@ -98,8 +99,4 @@
 
         }
     }
-}
-
-.card {
-
 }

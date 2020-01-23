@@ -11,13 +11,14 @@
         display: flex;
         position: relative;
         background-color: $color4;
-        margin: 1px 120px;
+        // margin: 1px 120px;
+        margin: 0.2em 2em;
     }
 
     .skill {
         width: 5em;
         background-color: black;
-        font-size: 2em;
+        font-size: 1.3em;
         color: white;
         padding-left: .3em;
     }
