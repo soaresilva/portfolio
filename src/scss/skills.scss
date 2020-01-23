@@ -1,15 +1,19 @@
+@import 'colors.scss';
+
 .skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $color5;
+
     div {
         display: flex;
         position: relative;
         background-color: $color4;
-        margin: 5px 120px;
+        margin: 1px 120px;
     }
+
     .skill {
         width: 5em;
         background-color: black;
@@ -17,14 +21,17 @@
         color: white;
         padding-left: .3em;
     }
+
     .bar {
         background-color: $color2;
         width: 50vw;
         flex-basis: 0;
     }
+
     .padding {
         flex-basis: 0;
     }
+
     .number {
     background-color: $color4;
     position: absolute;
@@ -35,6 +42,7 @@
     align-items: center;
     padding-right: .5em;
     }
+
     .htmlbar {
         .bar {
             flex-grow: 80;
@@ -43,6 +51,7 @@
             flex-grow: 20;
         }
     }
+
     .cssbar {
         .bar {
             flex-grow: 80;
@@ -51,14 +60,16 @@
             flex-grow: 20;
         }
     }
+
     .jsbar {
         .bar {
-            flex-grow: 70;
+            flex-grow: 10;
         }
         .padding {
-            flex-grow: 30;
+            flex-grow: 90;
         }
     }
+
     .reactbar {
         .bar {
             flex-grow: 60;
@@ -67,6 +78,7 @@
             flex-grow: 40;
         }
     }
+
     .jquerybar {
         .bar {
             flex-grow: 70;
@@ -75,6 +87,7 @@
             flex-grow: 30;
         }
     }
+
     .phpbar {
         .bar {
             flex-grow: 60;
@@ -83,6 +96,7 @@
             flex-grow: 40;
         }
     }
+
     .laravelbar {
         .bar {
             flex-grow: 60;
@@ -91,6 +105,7 @@
             flex-grow: 40;
         }
     }
+    
     .uxbar {
         .bar {
             flex-grow: 90;
