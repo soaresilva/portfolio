@@ -41,4 +41,10 @@ html, body {
         color: $color2;
         font-size: 1.5em;
     }
+
+    @media (max-width: 768px) {
+        p {
+            font-size: 1.2rem;
+        }
+    }
 }
