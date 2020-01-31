@@ -16,11 +16,11 @@
         <div id="logobox">
             <a href="#"><img src="img/logo.png"></a>
         </div>
-        <a href="#">Home</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#aboutme">About Me</a>
-        <a href="#contact">Contact</a>
+        <a data-scroll href="#">Home</a>
+        <a data-scroll href="#skills">Skills</a>
+        <a data-scroll href="#portfolio">Portfolio</a>
+        <a data-scroll href="#aboutme">About Me</a>
+        <a data-scroll href="#contact">Contact</a>
     </nav>
     
     <div class="welcome">
@@ -36,8 +36,8 @@
         <h1>Discover, design, etc</h1>
     </div>
 
-    <div class="skills">
-        <h1 name="#skills">MY SKILLS</h1>
+    <div class="skills" id="skills">
+        <h1>MY SKILLS</h1>
     
         <div class="htmlbar">
             <span class="skill">HTML</span>
@@ -96,7 +96,7 @@
         </div>
     </div>
 
-    <div class="myportfolio">
+    <div class="myportfolio" id="portfolio">
         <h1>MY PORTFOLIO</h1>
         <div class="portfolioitems">
             <div class="card card--card1">
@@ -132,7 +132,7 @@
         </div>
     </div>
 
-    <div class="aboutme">
+    <div class="aboutme" id="aboutme">
         <h1>ABOUT ME</h1>
     </div>
 
@@ -149,13 +149,17 @@
             </div>   
     </div>
     
-    <div class="contactme">
+    <div class="contactme" id="contact">
         <h1>CONTACT ME</h1>
+
+        <div></div>
+
     </div>
 
     <div class="nicetomeetyou">
         <h1>NICE TO MEET YOU!</h1>
     </div>
 
+    <script src="/src/js/index.js"></script>
 </body>
 </html>
