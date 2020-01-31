@@ -3,9 +3,23 @@
 .findme {
     width: 100%;
     background-color: $color1;
-    height: 50vh;
+    height: 40vh;
     h1 {
         padding: 1em;
         color: $color4;
+    }
+    
+    .findmeicons {
+        display: flex;
+        justify-content: space-around;
+        max-width: 70vw;
+        margin: auto;
+
+        .fab {
+            color: $color4;
+            font-size: 4rem;
+            align-items: center;
+            // padding: 0 0.5em;
+        }
     }
 }

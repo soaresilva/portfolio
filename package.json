@@ -17,5 +17,8 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
