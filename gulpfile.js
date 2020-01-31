@@ -17,6 +17,7 @@ function createStructure(done) {
         'src/fonts',
         'src/img',
         'src/scss',
+        'src/js',
     ];
     const files = [
         'src/index.html',
@@ -42,7 +43,7 @@ function createStructure(done) {
 // deletes all assets (HTML, fonts, images) in dist
 function cleanAssets(done) {
     return del(
-        ['dist/**/*.html', 'dist/fonts/**/*', 'dist/img/**/*'], 
+        ['dist/**/*.html', 'dist/fonts/**/*', 'dist/img/**/*', 'dist/js/**/*'], 
         { force: true }
     );
 }
@@ -78,6 +79,12 @@ function publishFonts(done) {
 function publishImages(done) {
     return gulp.src('src/img/**/*')
         .pipe(gulp.dest('dist/img'));
+}
+
+// Copy all scripts from src/js into dist
+function publishJs(done) {
+    return gulp.src('src/js/**/*')
+        .pipe(gulp.dest('dist/js'));
 }
  
 // compile SCSS files
@@ -115,6 +122,8 @@ function watchFiles(done) {
     gulp.watch("src/fonts/**/*", gulp.series(publishFonts, reload));
     gulp.watch("src/img/**/*", gulp.series(publishImages, reload));
     gulp.watch("src/scss/**/*.scss", gulp.series(compileScss, reload));
+    gulp.watch("src/js/**/*.js", gulp.series(publishJs, reload));
+
 }
  
 // browserSync server
@@ -135,7 +144,7 @@ function reload(done) {
  
 // export tasks
 exports.structure = createStructure;
-exports.publish   = gulp.series(cleanAssets, publishHtml,  publishFonts, publishImages);
-exports.build     = gulp.series(cleanAssets, publishHtmlProduction,  publishFonts, publishImages, compileScssProduction);
-exports.build_dev = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment);
-exports.watch     = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment, serve, watchFiles);
+exports.publish   = gulp.series(cleanAssets, publishHtml,  publishFonts, publishImages, publishJs);
+exports.build     = gulp.series(cleanAssets, publishHtmlProduction,  publishFonts, publishImages, compileScssProduction, publishJs);
+exports.build_dev = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, compileScssDevelopment, publishJs);
+exports.watch     = gulp.series(cleanAssets, publishHtmlDevelopment, publishFonts, publishImages, publishJs, compileScssDevelopment, serve, watchFiles);
