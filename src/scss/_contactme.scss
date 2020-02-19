@@ -1,10 +1,75 @@
+@import '_colors.scss';
+
 .contactme {
     width: 100%;
     background-color: $color2;
-    height: 50vh;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     h1 {
         padding: 1em;
         color: $color5;
         margin-top: 0;
+    }
+}
+
+input, textarea { 
+    outline: none;
+}
+form {
+    margin: auto;
+    width: 80%;
+    border-radius: 30px;
+    background: $color5;
+}
+.form-inner {
+    padding: 2rem;
+}
+.form-inner input, .form-inner textarea {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 20px;
+    background: $color4;
+}
+.form-inner textarea {
+    resize: none;
+}
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: none;
+    border-bottom: 4px solid $color1;
+    background: $color3; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+button:hover {
+    background: $color2;
+} 
+@media (min-width: 568px) {
+    form {
+        width: 60%;
+    }
+    .contactme {
+        height: 95vh;
+    }
+}
+
+@media (min-height: 300px) {
+    .contactme {
+        height: 120vh;
+    }
+}
+
+@media (min-height: 600px) {
+    .contactme {
+        height: 95vh;
     }
 }

@@ -4,9 +4,15 @@
 .nicetomeetyou {
     width: 100%;
     background-color: $color5;
-    height: 40vh;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: center;
     h1 {
         padding: 1em;
         margin-top: 0;
     }
+}
+
+p {
+    text-align: center;
 }
