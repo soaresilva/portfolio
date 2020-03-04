@@ -76,11 +76,17 @@
 
             img {
                 max-width: 100%;
+                max-height: 50%;
             }
 
             p {
                 text-align: center;
+                font-size: 0.9rem;
             } 
+            
+            a {
+                color: $color2;
+            }
             
             &--card6 {
                 h4 {

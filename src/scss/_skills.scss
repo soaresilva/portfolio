@@ -83,39 +83,39 @@
         }
     }
 
-    .jquerybar {
+    .mysqlbar {
         .bar {
-            flex-grow: 20;
+            flex-grow: 70;
         }
         .padding {
-            flex-grow: 80;
+            flex-grow: 30;
         }
     }
 
     .phpbar {
         .bar {
-            flex-grow: 40;
+            flex-grow: 70;
         }
         .padding {
-            flex-grow: 60;
+            flex-grow: 30;
         }
     }
 
     .laravelbar {
         .bar {
-            flex-grow: 10;
+            flex-grow: 80;
         }
         .padding {
-            flex-grow: 90;
+            flex-grow: 20;
         }
     }
     
     .uxbar {
         .bar {
-            flex-grow: 80;
+            flex-grow: 70;
         }
         .padding {
-            flex-grow: 20;
+            flex-grow: 30;
         }
     }
 }
