@@ -1,95 +1,95 @@
-@import '_colors.scss';
+@import "_colors.scss";
 
 .aboutme {
-    width: 100%;
-    background-color: $color5;
-    height: 40rem;
+  width: 100%;
+  background-color: $color5;
+  height: 30rem;
 }
 
 .aboutcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    h1 {
-        padding: .5em;
-    }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    padding: 0.5em;
+  }
 }
 
 .profilepic {
-    max-width: 50%;
-    height: auto;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .aboutmetext {
-    text-align: center;
-    margin: 1.5rem;
+  text-align: center;
+  margin: 1.5rem;
 }
 
 @media (min-width: 400px) {
-    .aboutcontainer {
-        height: 40rem;
-    }
+  .aboutcontainer {
+    height: 40rem;
+  }
 }
 @media (min-width: 600px) {
-    .aboutcontainer {
-        height: 40rem;
-    }
-    .profilepic {
-        max-width: 40%;
-    }
+  .aboutcontainer {
+    height: 40rem;
+  }
+  .profilepic {
+    max-width: 40%;
+  }
 }
 
 @media (min-width: 810px) {
-    .aboutme {
-        height: 35rem;
-    }
-    .aboutcontainer {
-        height: 35rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-    .profilepic {
-        max-width: 35%;
-        height: auto;
-        margin: 0 1rem 0 3rem;
-    }
-    .aboutmetext {
-        text-align: center;
-        font-size: 1.3rem;
-        margin: 0 3rem 0 1rem;
-    }
+  .aboutme {
+    height: 35rem;
+  }
+  .aboutcontainer {
+    height: 35rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .profilepic {
+    max-width: 35%;
+    height: auto;
+    margin: 0 1rem 0 3rem;
+  }
+  .aboutmetext {
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 3rem 0 1rem;
+  }
 }
 
 @media (min-width: 1000px) {
-    .aboutcontainer {
-        height: 32rem;
-    }
-    .profilepic {
-        max-width: 25%;
-    }
-    .aboutmetext {
-        font-size: 1.4rem;
-    }
+  .aboutcontainer {
+    height: 32rem;
+  }
+  .profilepic {
+    max-width: 25%;
+  }
+  .aboutmetext {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 1500px) {
-    .aboutme {
-        height: 30rem;
-    }
-    .aboutcontainer {
-        height: 30rem;
-    }
-    .profilepic {
-        max-width: 20%;
-    }
-    .aboutmetext {
-        font-size: 1.4rem;
-    }
+  .aboutme {
+    height: 30rem;
+  }
+  .aboutcontainer {
+    height: 30rem;
+  }
+  .profilepic {
+    max-width: 20%;
+  }
+  .aboutmetext {
+    font-size: 1.4rem;
+  }
 }
