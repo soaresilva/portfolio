@@ -211,7 +211,7 @@
 		if (settings.easing === 'easeInOutQuint') pattern = time < 0.5 ? 16 * time * time * time * time * time : 1 + 16 * (--time) * time * time * time * time; // acceleration until halfway, then deceleration
 
 		// Custom Easing Patterns
-		if (!!settings.customEasing) pattern = settings.customEasing(time);
+		if (settings.customEasing) pattern = settings.customEasing(time);
 
 		return pattern || time; // no easing, no acceleration
 	};

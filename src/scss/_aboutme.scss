@@ -1,9 +1,7 @@
 @import "_colors.scss";
 
 .aboutme {
-  width: 100%;
   background-color: $color5;
-  height: 30rem;
 }
 
 .aboutcontainer {
@@ -30,26 +28,14 @@
   margin: 1.5rem;
 }
 
-@media (min-width: 400px) {
-  .aboutcontainer {
-    height: 40rem;
-  }
-}
 @media (min-width: 600px) {
-  .aboutcontainer {
-    height: 40rem;
-  }
   .profilepic {
     max-width: 40%;
   }
 }
 
 @media (min-width: 810px) {
-  .aboutme {
-    height: 35rem;
-  }
   .aboutcontainer {
-    height: 35rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -68,9 +54,6 @@
 }
 
 @media (min-width: 1000px) {
-  .aboutcontainer {
-    height: 32rem;
-  }
   .profilepic {
     max-width: 25%;
   }
@@ -80,12 +63,6 @@
 }
 
 @media (min-width: 1500px) {
-  .aboutme {
-    height: 30rem;
-  }
-  .aboutcontainer {
-    height: 30rem;
-  }
   .profilepic {
     max-width: 20%;
   }

@@ -1,25 +1,26 @@
-@import '_colors.scss';
+@import "_colors.scss";
 
 .findme {
-    width: 100%;
-    background-color: $color1;
-    height: 40vh;
-    h1 {
-        padding: 1em;
-        color: $color4;
-    }
-    
-    .findmeicons {
-        display: flex;
-        justify-content: space-around;
-        max-width: 70vw;
-        margin: auto;
+  width: 100%;
+  padding-bottom: 2rem;
+  background-color: $color1;
+  h1 {
+    padding: 1em;
+    color: $color4;
+  }
 
-        .fab {
-            color: $color4;
-            font-size: 4rem;
-            align-items: center;
-            // padding: 0 0.5em;
-        }
+  .findmeicons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 70vw;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+
+    .fab {
+      color: $color4;
+      font-size: 4rem;
+      align-items: center;
     }
+  }
 }
