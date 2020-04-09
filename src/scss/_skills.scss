@@ -15,6 +15,9 @@
 
   i {
     padding: 1rem;
+    &:hover {
+      color: $color2;
+    }
   }
 }
 

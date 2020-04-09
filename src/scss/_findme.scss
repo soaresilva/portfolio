@@ -21,6 +21,9 @@
       color: $color4;
       font-size: 4rem;
       align-items: center;
+      &:hover {
+        color: $color3;
+      }
     }
   }
 }
