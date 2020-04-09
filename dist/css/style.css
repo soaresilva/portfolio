@@ -17,13 +17,15 @@
   color: #fbfff1; }
 
 .aboutme {
-  background-color: #fbfff1; }
+  background-color: #fbfff1;
+  margin-top: 2rem; }
 
 .aboutcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 2rem; }
   .aboutcontainer h1 {
     padding: 0.5em; }
 
@@ -38,35 +40,25 @@
 .aboutmetext {
   text-align: center;
   margin: 1.5rem; }
+  .aboutmetext a {
+    color: #002fa7; }
+    .aboutmetext a:hover {
+      text-decoration: none; }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .profilepic {
-    max-width: 40%; } }
+    max-width: 40%; }
+  .aboutmetext {
+    font-size: 1.2rem; } }
 
-@media (min-width: 810px) {
+@media (min-width: 960px) {
   .aboutcontainer {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center; }
   .profilepic {
-    max-width: 35%;
-    height: auto;
-    margin: 0 1rem 0 3rem; }
-  .aboutmetext {
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 0 3rem 0 1rem; } }
-
-@media (min-width: 1000px) {
-  .profilepic {
-    max-width: 25%; }
-  .aboutmetext {
-    font-size: 1.4rem; } }
-
-@media (min-width: 1500px) {
-  .profilepic {
-    max-width: 20%; }
+    max-width: 60%; }
   .aboutmetext {
     font-size: 1.4rem; } }
 
@@ -107,13 +99,12 @@
   color: #fbfff1; }
 
 .contactme {
-  background-color: #3066be;
+  background-color: #fbfff1;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .contactme h1 {
     padding: 1em;
-    color: #fbfff1;
     margin-top: 0; }
 
 input,
@@ -180,12 +171,11 @@ button:hover {
   color: #fbfff1; }
 
 .findme {
-  width: 100%;
   padding-bottom: 2rem;
-  background-color: #3c3744; }
+  background-color: #b4c5e4; }
   .findme h1 {
-    padding: 1em;
-    color: #b4c5e4; }
+    padding: 2rem;
+    color: #002fa7; }
   .findme .findmeicons {
     display: flex;
     justify-content: space-around;
@@ -194,11 +184,11 @@ button:hover {
     padding-top: 1rem;
     padding-bottom: 2rem; }
     .findme .findmeicons .fab {
-      color: #b4c5e4;
+      color: #3066be;
       font-size: 4rem;
       align-items: center; }
       .findme .findmeicons .fab:hover {
-        color: #3066be; }
+        color: #002fa7; }
 
 nav {
   background-color: #3c3744;
@@ -234,57 +224,84 @@ nav {
         padding: 0.15em;
         font-size: 0.9em; } }
 
+/* Coolors Exported Palette - coolors.co/3c3744-002fa7-3066be-b4c5e4-fbfff1 */
+/* HSL */
+/* RGB */
+.onyx {
+  color: #3c3744; }
+
+.ikb {
+  color: #002fa7; }
+
+.cerulean {
+  color: #3066be; }
+
+.lightsteel {
+  color: #b4c5e4; }
+
+.ivory {
+  color: #fbfff1; }
+
 .myportfolio {
-  background-color: #3066be;
+  background-color: #b4c5e4;
   margin-top: 4rem;
-  width: 100%; }
+  padding-bottom: 2rem; }
   .myportfolio h1 {
     padding: 2rem;
     color: #fbfff1; }
-  .myportfolio .portfolioitems {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 1rem 1rem 2rem 1rem; }
-    .myportfolio .portfolioitems .portfolioitems--group1 {
+  .myportfolio .row {
+    margin: auto;
+    align-items: stretch;
+    justify-content: space-around; }
+    @media (min-width: 1024px) {
+      .myportfolio .row {
+        padding-bottom: 1rem;
+        margin-bottom: 1rem; } }
+    .myportfolio .row .card {
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px #aaa;
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: stretch;
-      margin: auto auto 2rem auto; }
-      @media (max-width: 1024px) {
-        .myportfolio .portfolioitems .portfolioitems--group1 {
-          display: flex;
-          flex-flow: column; } }
+      flex-direction: column;
+      align-items: center; }
       @media (min-width: 1024px) {
-        .myportfolio .portfolioitems .portfolioitems--group1 {
-          flex-direction: row;
-          flex-flow: row; } }
-      .myportfolio .portfolioitems .portfolioitems--group1 .card {
-        padding: 1.5rem 1rem;
-        margin-bottom: 1rem;
-        background-color: white;
-        border-radius: 5px;
-        box-shadow: 0px 0px 2px #aaa;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center; }
-        @media (min-width: 768px) {
-          .myportfolio .portfolioitems .portfolioitems--group1 .card p {
+        .myportfolio .row .card {
+          margin: 0 0.5rem;
+          max-width: 30%; } }
+      .myportfolio .row .card img {
+        max-width: 100%;
+        max-height: 50%; }
+      .myportfolio .row .card h5 {
+        text-align: center;
+        padding-top: 1rem;
+        font-weight: 600;
+        font-size: 1.5rem; }
+        @media (min-width: 576px) {
+          .myportfolio .row .card h5 {
             font-size: 2rem; } }
         @media (min-width: 1024px) {
-          .myportfolio .portfolioitems .portfolioitems--group1 .card {
-            margin: 0 0.5rem;
-            max-width: 30%; }
-            .myportfolio .portfolioitems .portfolioitems--group1 .card p {
-              font-size: 1.5rem; } }
-        .myportfolio .portfolioitems .portfolioitems--group1 .card img {
-          max-width: 100%;
-          max-height: 50%; }
-        .myportfolio .portfolioitems .portfolioitems--group1 .card p {
-          text-align: center; }
-        .myportfolio .portfolioitems .portfolioitems--group1 .card a {
-          color: #002fa7; }
+          .myportfolio .row .card h5 {
+            font-size: 1.8rem; } }
+      .myportfolio .row .card p {
+        text-align: center; }
+        @media (min-width: 576px) {
+          .myportfolio .row .card p {
+            font-size: 2rem; } }
+        @media (min-width: 1024px) {
+          .myportfolio .row .card p {
+            font-size: 1.5rem; } }
+      .myportfolio .row .card .card-smaller {
+        font-size: 0.9rem; }
+        @media (min-width: 576px) {
+          .myportfolio .row .card .card-smaller {
+            font-size: 1.7rem; } }
+        @media (min-width: 1024px) {
+          .myportfolio .row .card .card-smaller {
+            font-size: 1.3rem; } }
+      .myportfolio .row .card a {
+        color: #002fa7; }
 
 /* Coolors Exported Palette - coolors.co/3c3744-002fa7-3066be-b4c5e4-fbfff1 */
 /* HSL */
@@ -306,23 +323,16 @@ nav {
 
 .nicetomeetyou {
   width: 100%;
-  background-color: #fbfff1;
+  background-color: #3c3744;
   height: 25vh;
   flex-direction: column;
   justify-content: center; }
   .nicetomeetyou h1 {
     padding: 1em;
-    margin-top: 0; }
-
-p {
-  text-align: center; }
-
-.process {
-  width: 100%;
-  background-color: #3c3744;
-  height: 40vh; }
-  .process h1 {
-    padding: 1em;
+    margin-top: 0;
+    color: #fbfff1; }
+  .nicetomeetyou p {
+    text-align: center;
     color: #fbfff1; }
 
 /* Coolors Exported Palette - coolors.co/3c3744-002fa7-3066be-b4c5e4-fbfff1 */
@@ -343,37 +353,48 @@ p {
 .ivory {
   color: #fbfff1; }
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfff1;
+  margin-top: 2rem; }
+
 .techicons {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   font-size: 5rem;
   width: 50%; }
-  .techicons div {
+  .techicons .mainrow {
     align-items: center;
     justify-content: space-between;
     margin: auto; }
-  .techicons i {
-    padding: 1rem; }
-    .techicons i:hover {
-      color: #002fa7; }
-
-.skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fbfff1; }
+    .techicons .mainrow i {
+      padding: 1rem; }
+      .techicons .mainrow i:hover {
+        color: #002fa7; }
+  .techicons .secondaryrow {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto; }
+    .techicons .secondaryrow i {
+      padding: 1rem; }
+      .techicons .secondaryrow i:hover {
+        color: #002fa7; }
 
 .welcome {
   background-color: #b4c5e4;
-  font-size: 1em;
+  padding: 1rem;
+  font-size: 1rem;
   text-align: center;
   flex-direction: column;
-  padding: 1em;
-  font-size: 2em; }
+  font-size: 2em;
+  padding-bottom: 2rem; }
   .welcome h1 {
-    color: #3066be;
+    color: #002fa7;
     margin: 0;
     padding-top: 0; }
   .welcome h2 {
@@ -382,48 +403,24 @@ p {
     font-weight: 400; }
   @media (min-width: 1024px) {
     .welcome h1 {
-      color: #3066be;
-      margin: 0;
-      padding-top: 0;
       font-size: 3em; }
     .welcome h2 {
-      color: #3066be;
-      margin: 0;
-      font-weight: 400;
       font-size: 2em; } }
   @media (max-width: 1024px) {
     .welcome h1 {
-      color: #3066be;
-      margin: 0;
-      padding-top: 0;
       font-size: 2em; }
     .welcome h2 {
-      color: #3066be;
-      margin: 0;
-      font-weight: 400;
       font-size: 1.5em; } }
   @media (max-width: 700px) {
     .welcome h1 {
-      color: #3066be;
-      margin: 0;
-      padding-top: 0;
       font-size: 1.2em; }
     .welcome h2 {
-      color: #3066be;
-      margin: 0;
-      font-weight: 400;
       font-size: 1em; } }
   @media (max-width: 420px) {
     .welcome h1 {
-      color: #3066be;
-      margin: 0;
-      padding-top: 0;
       font-size: 1em; }
     .welcome h2 {
-      color: #3066be;
-      margin: 0;
-      font-weight: 400;
-      font-size: .8em; } }
+      font-size: 0.8em; } }
 
 * {
   box-sizing: border-box; }
@@ -435,14 +432,23 @@ a {
     text-decoration: underline; }
 
 h1 {
-  text-align: center; }
+  text-align: center;
+  font-weight: 600; }
 
-html, body {
+html,
+body {
   font-family: "Alegreya Sans", sans-serif;
   width: 100pw;
   background-color: #fbfff1;
   padding: 0;
   margin: 0; }
+
+.navbar a {
+  font-size: 1.5rem; }
+
+@media (max-width: 375px) {
+  .navbar a {
+    font-size: 1.2rem; } }
 
 .tagline {
   width: 100%;

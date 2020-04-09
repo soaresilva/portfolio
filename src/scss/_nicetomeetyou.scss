@@ -3,16 +3,18 @@
 
 .nicetomeetyou {
     width: 100%;
-    background-color: $color5;
+    background-color: $color1;
     height: 25vh;
     flex-direction: column;
     justify-content: center;
     h1 {
         padding: 1em;
         margin-top: 0;
+        color: $color5;
+    }
+    p {
+        text-align: center;
+        color: $color5;
     }
 }
 
-p {
-    text-align: center;
-}

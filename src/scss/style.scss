@@ -1,56 +1,64 @@
-@import '_aboutme.scss';
-@import '_colors.scss';
-@import '_contactme.scss';
-@import '_findme.scss';
-@import '_logobox.scss';
-@import '_myportfolio.scss';
-@import '_nicetomeetyou.scss';
-@import '_process.scss';
-@import '_skills.scss';
-@import '_welcome.scss';
+@import "_aboutme.scss";
+@import "_colors.scss";
+@import "_contactme.scss";
+@import "_findme.scss";
+@import "_logobox.scss";
+@import "_myportfolio.scss";
+@import "_nicetomeetyou.scss";
+@import "_skills.scss";
+@import "_welcome.scss";
+@import "../../node_modules/rfs/scss";
 
 * {
-    box-sizing: border-box;
-    // scroll-behavior: smooth;
-    // @media screen and (prefers-reduced-motion: reduce) {
-    //     scroll-behavior: auto;
-    //     }
-    }
+  box-sizing: border-box;
+}
 
 a {
-    color: $color5;
-    text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+  color: $color5;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
+  font-weight: 600;
 }
 
-html, body {
-    font-family: "Alegreya Sans", sans-serif;
-    width: 100pw;
-    background-color: $color5;
-    // height: 100vh;
-    padding: 0;
-    margin: 0;
+html,
+body {
+  font-family: "Alegreya Sans", sans-serif;
+  width: 100pw;
+  background-color: $color5;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar {
+  a {
+    font-size: 1.5rem;
+  }
+
+  @media (max-width: 375px) {
+    a {
+      font-size: 1.2rem;
+    }
+  }
 }
 
 .tagline {
-    width: 100%;
-    background-color: $color5;
-    text-align: center;
+  width: 100%;
+  background-color: $color5;
+  text-align: center;
+  p {
+    color: $color2;
+    font-size: 1.5em;
+  }
+
+  @media (max-width: 768px) {
     p {
-        color: $color2;
-        font-size: 1.5em;
+      font-size: 1.2rem;
     }
-
-    @media (max-width: 768px) {
-        p {
-            font-size: 1.2rem;
-        }
-    }
+  }
 }
-

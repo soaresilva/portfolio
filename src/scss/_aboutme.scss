@@ -2,6 +2,7 @@
 
 .aboutme {
   background-color: $color5;
+  margin-top: 2rem;
 }
 
 .aboutcontainer {
@@ -9,6 +10,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-bottom: 2rem;
+
   h1 {
     padding: 0.5em;
   }
@@ -26,15 +29,24 @@
 .aboutmetext {
   text-align: center;
   margin: 1.5rem;
-}
-
-@media (min-width: 600px) {
-  .profilepic {
-    max-width: 40%;
+  a {
+    color: $color2;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
-@media (min-width: 810px) {
+@media (min-width: 768px) {
+  .profilepic {
+    max-width: 40%;
+  }
+  .aboutmetext {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 960px) {
   .aboutcontainer {
     display: flex;
     flex-direction: row;
@@ -42,31 +54,46 @@
     justify-content: center;
   }
   .profilepic {
-    max-width: 35%;
-    height: auto;
-    margin: 0 1rem 0 3rem;
-  }
-  .aboutmetext {
-    text-align: center;
-    font-size: 1.3rem;
-    margin: 0 3rem 0 1rem;
-  }
-}
-
-@media (min-width: 1000px) {
-  .profilepic {
-    max-width: 25%;
+    max-width: 60%;
   }
   .aboutmetext {
     font-size: 1.4rem;
   }
 }
 
-@media (min-width: 1500px) {
-  .profilepic {
-    max-width: 20%;
-  }
-  .aboutmetext {
-    font-size: 1.4rem;
-  }
-}
+// @media (min-width: 810px) {
+//   .aboutcontainer {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
+//   }
+//   .profilepic {
+//     max-width: 35%;
+//     height: auto;
+//     margin: 0 1rem 0 3rem;
+//   }
+//   .aboutmetext {
+//     text-align: center;
+//     font-size: 1.3rem;
+//     margin: 0 3rem 0 1rem;
+//   }
+// }
+
+// @media (min-width: 1000px) {
+//   .profilepic {
+//     max-width: 25%;
+//   }
+//   .aboutmetext {
+//     font-size: 1.4rem;
+//   }
+// }
+
+// @media (min-width: 1500px) {
+//   .profilepic {
+//     max-width: 20%;
+//   }
+//   .aboutmetext {
+//     font-size: 1.4rem;
+//   }
+// }

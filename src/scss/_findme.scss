@@ -1,12 +1,11 @@
 @import "_colors.scss";
 
 .findme {
-  width: 100%;
   padding-bottom: 2rem;
-  background-color: $color1;
+  background-color: $color4;
   h1 {
-    padding: 1em;
-    color: $color4;
+    padding: 2rem;
+    color: $color2;
   }
 
   .findmeicons {
@@ -18,11 +17,11 @@
     padding-bottom: 2rem;
 
     .fab {
-      color: $color4;
+      color: $color3;
       font-size: 4rem;
       align-items: center;
       &:hover {
-        color: $color3;
+        color: $color2;
       }
     }
   }

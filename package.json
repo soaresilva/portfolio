@@ -21,6 +21,8 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "bootstrap": "^4.4.1",
+    "rfs": "^9.0.2",
     "smooth-scroll": "^16.1.2"
   }
 }

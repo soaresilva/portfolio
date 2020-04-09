@@ -1,5 +1,14 @@
 @import "_colors.scss";
 
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color5;
+  margin-top: 2rem;
+}
+
 .techicons {
   display: flex;
   flex-wrap: wrap;
@@ -7,24 +16,30 @@
   font-size: 5rem;
   width: 50%;
 
-  div {
+  .mainrow {
     align-items: center;
     justify-content: space-between;
     margin: auto;
+    i {
+      padding: 1rem;
+      &:hover {
+        color: $color2;
+      }
+    }
   }
+  .secondaryrow {
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
 
-  i {
-    padding: 1rem;
-    &:hover {
-      color: $color2;
+    i {
+      padding: 1rem;
+      &:hover {
+        color: $color2;
+      }
     }
   }
 }
 
-.skills {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: $color5;
-}
+

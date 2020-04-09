@@ -1,123 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700,900&display=swap" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+
+    <!-- Local CSS / Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,400i,700,900&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/4895718c7d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css" />
 
+    <title>Portfolio</title>
 </head>
+
 <body>
-
-    <nav>
-        <div id="logobox">
-            <a href="#"><img src="img/logo.png"></a>
-        </div>
-        <a data-scroll href="#">Home</a>
-        <a data-scroll href="#skills">Skills</a>
-        <a data-scroll href="#portfolio">Portfolio</a>
-        <a data-scroll href="#aboutme">About Me</a>
-        <a data-scroll href="#contact">Contact</a>
+    <nav class="navbar ml-auto" id="navbarNavAltMarkup">
+        <a class="nav-item nav-link" data-scroll href="#skills">Skills</a>
+        <a class="nav-item nav-link" data-scroll href="#portfolio">Portfolio</a>
+        <a class="nav-item nav-link" data-scroll href="#contact">Contact</a>
     </nav>
-    
+
     <div class="welcome">
-        <h1>Hello. I am <span class="ikb">Diogo Silva</span>,</h1>
-        <h2>a full-stack web developer.</h2>
-    </div>
-
-    <div class="tagline">
-        <p>I create websites. I have a lot of patience. <br>Here's why you should hire me:</p>
-    </div>
-<!-- 
-    <div class="process">
-        <h1>For now, this is an empty section.</h1>
-    </div> -->
-
-    <div class="skills" id="skills">
-        <h1>MY SKILLS</h1>
-        
-        <div class="techicons">
-            <div>
-                <i class="fab fa-php"></i>
-                <i class="fab fa-laravel"></i>
-                <i class="fab fa-js-square"></i>
-                <i class="fab fa-react"></i>
-            </div>
-            <div>
-                <i class="fas fa-database"></i>
-                <i class="fab fa-html5"></i>
-                <i class="fab fa-sass"></i>
-                <i class="fab fa-git-alt"></i>
-                <i class="fab fa-github"></i>
-            </div>
-            <div>
-                <i class="fab fa-yarn"></i>
-                <i class="fab fa-npm"></i>
-                <i class="fab fa-gulp"></i>
-                <i class="fab fa-node-js"></i>
-            </div>
-        </div>
-    </div>
-
-    <div class="myportfolio" id="portfolio">
-        <h1>MY PORTFOLIO</h1>
-        <div class="portfolioitems">
-            <div class="portfolioitems--group1">
-                <div class="card card--card1">
-                    <img src="img/proj1.png">
-                    <p><b>A static website for a cafe.</b></p>
-                    <p>Simulation of a basic web dev contract on a six-hours long hackathon.</p>
-                    <h4>Tools: HTML5, SASS (+ Git, Yarn, Gulp)</h4>
-                    <b><p>View on <a href="https://github.com/soaresilva/hackathon-1">GitHub</a> / Deployed <a href="https://coffee.soaresilva.eu">here</a>.</p></b>
-                </div>
-                <div class="card card--card2">
-                    <img src="img/proj2.png">
-                    <p><b>A JavaScript Pacman game.</b></p>
-                    <p>A little Pacman-like web application built with vanilla JS during a six-hours long hackathon.
-                    </p>
-                    <h4>Tools: JavaScript, HTML5, SASS (+Git, Yarn)</h4>
-                    <b><p>View on <a href="https://github.com/soaresilva/pacman">GitHub</a></p></b>
-                </div>
-                <div class="card card--card3">
-                    <img src="img/proj3.png">
-                    <p><b>The back-end for a veterinary clinic.</b></p>
-                    <p>Simulation of a basic web dev contract on a six-hours long hackathon.</p>
-                    <h4>Tools: PHP, Laravel, MySQL, HTML5, SASS (+Git, Yarn)</h4>
-                    <b><p>View on <a href="https://github.com/soaresilva/veterinary-clinic">GitHub</a></p></b>
-                </div>
-            </div>
-        </div>
+        <h1>Diogo Soares Silva</h1>
+        <h2>A full-stack web developer based in Prague, CZ.</h2>
     </div>
 
     <div class="aboutme" id="aboutme">
         <h1>ABOUT ME</h1>
-        
-        <div class="aboutcontainer">
-            <img src="img/photo.jpg" class="profilepic"></img>
-            
-            <div class="aboutmetext">
-                <p>My name is Diogo Soares da Silva. For the past eight years I was an academic, conducting research in universities in Portugal, the Netherlands and the UK.</p>
-                <p>These days, I am a full-stack web developer with attention to detail. I mostly create web applications using JavaScript (with React) and PHP (with Laravel), but I am constantly reading about new languages and frameworks — maybe I'll learn the next one while working with you.</p>
-                <p>When not coding, you might find me surrounded by music — crafting playlists, digging for vinyl, and standing in front of you on a concert — or pictures of cute animals.</p>
+        <div class="aboutcontainer container-fluid">
+            <div class="col-4-auto">
+                <img src="img/photo.jpg" class="profilepic" />
+            </div>
+            <div class="aboutmetext col-8-auto">
+                <p>
+                    My name is Diogo Soares da Silva. For the past eight years I was an
+                    academic, conducting research in universities in Portugal, the
+                    Netherlands and the UK.
+                </p>
+                <p>
+                    These days, I am a full-stack web developer with attention to
+                    detail. I mostly create web applications using JavaScript (with
+                    React) and PHP (with Laravel), but I am constantly reading about new
+                    languages and frameworks — maybe I'll learn the next one while
+                    working with you.
+                </p>
+                <p>
+                    When not coding, you might find me surrounded by music —
+                    <a href="http://bolachas.org" target="_blank">crafting playlists</a>,
+                    <a href="https://www.discogs.com/user/leavethecity/collection" target="_blank">digging for
+                        vinyl</a>, and standing in front of you on a concert — or pictures of cute
+                    animals.
+                </p>
             </div>
         </div>
-
     </div>
 
     <div class="findme">
         <h1>FIND ME HERE</h1>
-            <div class="findmeicons">
+        <div class="findmeicons">
+            <a href="https://github.com/soaresilva" target="_blank"><i class="fab fa-github-square"></i></a>
+            <a href="https://www.linkedin.com/in/diogossilva/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://open.spotify.com/user/leavethecity" target="_blank"><i class="fab fa-spotify"></i></a>
+        </div>
+    </div>
 
-                <a href="https://github.com/soaresilva"><i class="fab fa-github-square"></i></a>
+    <div class="skills" id="skills">
+        <h1>MY SKILLS</h1>
 
-                <a href="https://www.linkedin.com/in/diogossilva/"><i class="fab fa-linkedin"></i></a>
-
-                <a href="https://open.spotify.com/user/leavethecity"><i class="fab fa-spotify"></i></a>
-
-            </div>   
+        <div class="techicons container">
+            <div class="mainrow">
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fab fa-laravel" title="Laravel"></i>
+                <i class="fab fa-js-square" title="JavaScript"></i>
+                <i class="fab fa-react" title="React"></i>
+            </div>
+            <div class="secondaryrow">
+                <i class="fas fa-database" title="MySQL"></i>
+                <i class="fab fa-html5" title="HTML 5"></i>
+                <i class="fab fa-sass" title="SCSS/SASS"></i>
+                <i class="fab fa-git-alt" title="Git"></i>
+                <i class="fab fa-github" title="Github"></i>
+            </div>
+            <div class="secondaryrow">
+                <i class="fab fa-yarn" title="Yarn"></i>
+                <i class="fab fa-npm" title="NPM"></i>
+                <i class="fab fa-gulp" title="Gulp"></i>
+                <i class="fab fa-node-js" title="node.js"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="myportfolio" id="portfolio">
+        <h1>MY PORTFOLIO</h1>
+        <div class="portfolioitems">
+            <div class="row container-fluid">
+                <div class="card col-xl-4">
+                    <img src="img/proj4.png">
+                    <h5>Carbon Voyage, a carbon footprint calculator.</h5>
+                    <p>The application allows the user to search for flights (using <a href="https://docs.kiwi.com/" target="_blank">Kiwi's API</a>) and calculates the distance between the two airports and how much CO2 is emitted on a given flight.</p>
+                    <p>Tools: Laravel, React, Redux, MySQL, SASS</p>
+                    <p class="card-smaller">(+Git, NPM, Chartjs, Bootstrap)</p>
+                    <strong><p>View on <a href="https://github.com/soaresilva/cfc" target="_blank">GitHub</a> / Deployed <a href="http://carbon-calculator.codeboot.cz" target="_blank">here</a>.</p></strong>
+                </div>
+                <div class="card col-xl-4">
+                    <img src="img/proj1.png">
+                    <h5>A static website for a cafe.</h5>
+                    <p>Simulation of a basic web dev contract on a six-hours long hackathon.</p>
+                    <p>Tools: HTML5, SASS</p>
+                    <p class="card-smaller">(+Git, Yarn, Gulp)</p>
+                    <strong><p>View on <a href="https://github.com/soaresilva/hackathon-1" target="_blank">GitHub</a> / Deployed <a href="https://coffee.soaresilva.eu" target="_blank">here</a>.</p></strong>
+                </div>
+                <div class="card col-xl-4">
+                    <img src="img/proj2.png">
+                    <h5>A JavaScript Pacman game.</h5>
+                    <p>A little Pacman-like web application built with vanilla JS during a six-hours long hackathon.
+                    </p>
+                    <p>Tools: JavaScript, HTML5, SASS</p>
+                    <p class="card-smaller">(+Git, Yarn)</p>
+                    <strong><p>View on <a href="https://github.com/soaresilva/pacman" target="_blank">GitHub</a></p></strong>
+                </div>
+            </div>
+            <div class="row container-fluid">
+                <div class="card col-xl-4">
+                    <img src="img/proj3.png">
+                    <h5>Veterinary clinic admin platform.</h5>
+                    <p>Simulation of a basic web dev contract on a six-hours long hackathon.</p>
+                    <p>Development of the admin platform for a veterinary clinic, with basic CRUD.</p>
+                    <p>Tools: PHP, Laravel, MySQL, HTML5, SASS</p>
+                    <p class="card-smaller">(+Git, Yarn)</p>
+                    <strong><p>View on <a href="https://github.com/soaresilva/veterinary-clinic" target="_blank">GitHub</a></p></strong>
+                </div>
+            </div>
+        </div>
     </div>
     
     <div class="contactme" id="contact">
@@ -125,26 +145,38 @@
 
         <form action="https://formspree.io/xeqkbdwz" class="decor" method="POST">
             <div class="form-inner">
-              <input type="text" placeholder="Name *" name="name" required>
-              <input type="email" placeholder="Email *" required name="email">
-              <input type="tel" placeholder="Phone number" name="phone">
-              <input type="text" placeholder="Subject" name="subject">
-              <textarea placeholder="Your message *" rows="5" required name="message"></textarea>
-              <button type="submit">Submit</button>
+                <input type="text" placeholder="Name *" name="name" required />
+                <input type="email" placeholder="Email *" required name="email" />
+                <input type="tel" placeholder="Phone number" name="phone" />
+                <input type="text" placeholder="Subject" name="subject" />
+                <textarea placeholder="Your message *" rows="5" required name="message"></textarea>
+                <button type="submit">Submit</button>
             </div>
-          </form>
+        </form>
     </div>
 
     <footer class="nicetomeetyou">
         <h1>That's all, folks.</h1>
-        
-        <p>A work in progress by Diogo Soares da Silva, 2020.</p>
+
+        <p>Diogo Soares da Silva, 2020.</p>
     </footer>
 
+    <!-- Optional JavaScript -->
     <script src="/js/index.js"></script>
     <script src="/js/smooth-scroll.js"></script>
     <script>
         const scroll = new SmoothScroll('a[href*="#"]');
     </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

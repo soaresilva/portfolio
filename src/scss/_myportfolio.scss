@@ -1,73 +1,82 @@
+@import "_colors.scss";
+
 .myportfolio {
-  background-color: $color3;
+  background-color: $color4;
   margin-top: 4rem;
-  width: 100%;
+  padding-bottom: 2rem;
 
   h1 {
     padding: 2rem;
     color: $color5;
   }
-  .portfolioitems {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 1rem 1rem 2rem 1rem;
+  
+  .row {
+    margin: auto;
+    align-items: stretch;
+    justify-content: space-around;
 
-    .portfolioitems--group1 {
+    @media (min-width: 1024px) {
+      padding-bottom: 1rem;
+      margin-bottom: 1rem;
+    }
+    
+    .card {
+      padding: 1.5rem 1rem;
+      margin-bottom: 1rem;
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0px 0px 2px #aaa;
       display: flex;
-      flex-flow: row wrap;
-      justify-content: space-around;
-      align-items: stretch;
-      margin: auto auto 2rem auto;
-
-      @media (max-width: 1024px) {
-        display: flex;
-        flex-flow: column;
-      }
-
+      flex-direction: column;
+      align-items: center;
+      
       @media (min-width: 1024px) {
-        flex-direction: row;
-        flex-flow: row;
+        margin: 0 0.5rem;
+        max-width: 30%;
       }
-
-      .card {
-        padding: 1.5rem 1rem;
-        margin-bottom: 1rem;
-        background-color: white;
-        border-radius: 5px;
-        box-shadow: 0px 0px 2px #aaa;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-
-        @media (min-width: 768px) {
-          p {
-            font-size: 2rem;
-          }
+      
+      img {
+        max-width: 100%;
+        max-height: 50%;
+      }
+      
+      h5 {
+        text-align: center;
+        padding-top: 1rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        @media (min-width: 576px) {
+          font-size: 2rem;
         }
-
+        
         @media (min-width: 1024px) {
-          margin: 0 0.5rem;
-          max-width: 30%;
-          p {
-            font-size: 1.5rem;
-          }
-        }
-
-        img {
-          max-width: 100%;
-          max-height: 50%;
-        }
-
-        p {
-          text-align: center;
-          // font-size: 0.9rem;
-        }
-
-        a {
-          color: $color2;
+          font-size: 1.8rem;
         }
       }
+      
+      p {
+        text-align: center;
+        @media (min-width: 576px) {
+            font-size: 2rem;
+        }
+        @media (min-width: 1024px) {
+          font-size: 1.5rem;
+        }
+      }
+      .card-smaller {
+        font-size: 0.9rem;
+        @media (min-width: 576px) {
+          font-size: 1.7rem;
+      }
+      @media (min-width: 1024px) {
+        font-size: 1.3rem;
+      }
+      }
+      
+      a {
+        color: $color2;
+      }
+      
     }
   }
 }
