@@ -24,5 +24,8 @@
     "bootstrap": "^4.4.1",
     "rfs": "^9.0.2",
     "smooth-scroll": "^16.1.2"
+  },
+  "resolutions": {
+    "minimist": "^1.2.3"
   }
 }
