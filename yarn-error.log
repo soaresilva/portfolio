@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/Cellar/node/13.11.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js add rfs
+  /usr/local/Cellar/node/13.11.0/bin/node /usr/local/Cellar/yarn/1.22.4/libexec/bin/yarn.js upgrade minimist
 
 PATH: 
   /usr/local/sbin:/usr/local/sbin:/Applications/mampstack-7.3.13-0/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/diogo/webdev/mongodb-macos-x86_64-enterprise-4.2.3/bin:/Users/diogo/.composer/vendor/bin:/usr/local/sbin
@@ -41,6 +41,7 @@ npm manifest:
     "dependencies": {
       "aos": "^2.3.4",
       "bootstrap": "^4.4.1",
+      "rfs": "^9.0.2",
       "smooth-scroll": "^16.1.2"
     }
   }
@@ -3865,6 +3866,13 @@ Lockfile:
     version "0.1.15"
     resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
     integrity sha512-TTlYpa+OL+vMMNG24xSlQGEJ3B/RzEfUlLct7b5G/ytav+wPrplCpVMFuwzXbkecJrb6IYo1iFb0S9v37754mg==
+  
+  rfs@^9.0.2:
+    version "9.0.2"
+    resolved "https://registry.yarnpkg.com/rfs/-/rfs-9.0.2.tgz#3561013d529e4cbeb5839bd7a6b4e2fa48a54a28"
+    integrity sha512-reBlIf8GuC3h6LgpEWMCjGUwo7kNgNNnxhX6yTEHD4NEjg4gsVoWyqJ8rdNYjD2KFWxBqAmfuFIQcuaKNY0Oqg==
+    dependencies:
+      postcss-value-parser "^4.0.2"
   
   rimraf@2, rimraf@^2.2.8:
     version "2.7.1"
