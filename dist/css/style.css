@@ -336,11 +336,10 @@ nav {
   color: #fbfff1; }
 
 .nicetomeetyou {
-  width: 100%;
   background-color: #3c3744;
-  height: 25vh;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  padding-bottom: 0.5rem; }
   .nicetomeetyou h1 {
     padding: 1em;
     margin-top: 0;
@@ -348,6 +347,10 @@ nav {
   .nicetomeetyou p {
     text-align: center;
     color: #fbfff1; }
+  .nicetomeetyou a {
+    color: #b4c5e4; }
+    .nicetomeetyou a:hover {
+      text-decoration: none; }
 
 /* Coolors Exported Palette - coolors.co/3c3744-002fa7-3066be-b4c5e4-fbfff1 */
 /* HSL */
