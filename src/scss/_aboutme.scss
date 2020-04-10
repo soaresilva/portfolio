@@ -39,7 +39,7 @@
 
 @media (min-width: 768px) {
   .profilepic {
-    max-width: 40%;
+    max-width: 50%;
   }
   .aboutmetext {
     font-size: 1.2rem;
@@ -53,10 +53,23 @@
     align-items: center;
     justify-content: center;
   }
+  .picdiv {
+    width: 40%;
+  }
   .profilepic {
-    max-width: 90%;
+    max-width: 80%;
   }
   .aboutmetext {
     font-size: 1.4rem;
+    width: 60%;
+  }
+  @media (min-width: 1200px) {
+    .profilepic {
+      max-width: 65%;
+    }
+    .aboutmetext {
+      font-size: 1.4rem;
+      width: 70%;
+    }
   }
 }
