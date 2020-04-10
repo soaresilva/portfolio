@@ -11,17 +11,23 @@
   .findmeicons {
     display: flex;
     justify-content: space-around;
-    max-width: 70vw;
     margin: auto;
     padding-top: 1rem;
     padding-bottom: 2rem;
 
-    .fab {
+    @media (min-width: 768px) {
+      max-width: 60%
+    }
+
+    i {
       color: $color3;
-      font-size: 4rem;
+      font-size: 3rem;
       align-items: center;
       &:hover {
         color: $color2;
+      }
+      @media (min-width: 768px) {
+        font-size: 4rem;
       }
     }
   }

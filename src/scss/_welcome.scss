@@ -5,7 +5,15 @@
   text-align: center;
   flex-direction: column;
   font-size: 2em;
-  padding-bottom: 2rem;
+  
+  a {
+    color: $color2;
+    // text-decoration: underline;
+    font-weight: 600;
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   h1 {
     color: $color2;

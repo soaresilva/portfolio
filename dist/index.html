@@ -16,19 +16,22 @@
     <script src="https://kit.fontawesome.com/4895718c7d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/style.css" />
 
-    <title>Portfolio</title>
+    <title>Diogo Soares Silva | Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar ml-auto" id="navbarNavAltMarkup">
-        <a class="nav-item nav-link" data-scroll href="#skills">Skills</a>
-        <a class="nav-item nav-link" data-scroll href="#portfolio">Portfolio</a>
-        <a class="nav-item nav-link" data-scroll href="#contact">Contact</a>
+    <nav id="navbarNavAltMarkup">
+        <div class="navbar ml-auto">
+            <a class="nav-item nav-link" data-scroll href="#skills">Skills</a>
+            <a class="nav-item nav-link" data-scroll href="#portfolio">Portfolio</a>
+            <a class="nav-item nav-link" data-scroll href="#contact">Contact</a>
+        </div>
     </nav>
 
     <div class="welcome">
         <h1>Diogo Soares Silva</h1>
         <h2>A full-stack web developer based in Prague, CZ.</h2>
+        <p>If you're searching for my résumé, <a href="https://soaresilva.eu/diogo-soares-silva-cv.pdf" target="_blank">look no further</a>. But feel free to scroll down and learn more about my work.</p>
     </div>
 
     <div class="aboutme" id="aboutme">
@@ -40,7 +43,7 @@
             <div class="aboutmetext col-8-auto">
                 <p>
                     My name is Diogo Soares da Silva. For the past eight years I was an
-                    academic, conducting research in universities in Portugal, the
+                    <a href="https://orcid.org/0000-0003-2734-6733" target="_blank">academic</a>, conducting research in universities in Portugal, the
                     Netherlands and the UK.
                 </p>
                 <p>
@@ -64,6 +67,7 @@
     <div class="findme">
         <h1>FIND ME HERE</h1>
         <div class="findmeicons">
+            <a href="https://soaresilva.eu"><i class="fas fa-home"></i></a>
             <a href="https://github.com/soaresilva" target="_blank"><i class="fab fa-github-square"></i></a>
             <a href="https://www.linkedin.com/in/diogossilva/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://open.spotify.com/user/leavethecity" target="_blank"><i class="fab fa-spotify"></i></a>
@@ -72,8 +76,26 @@
 
     <div class="skills" id="skills">
         <h1>MY SKILLS</h1>
+        <div class="tools container-fluid">
+                <div class="toolspast col-md">
+                    <h4>Which tools have I learned and worked with?</h4>
+                    <p>Front-end: JavaScript with React</p>
+                    <p>Back-end: PHP with Laravel</p>
+                    <p>Relational databases: SQL (RDBMS: MySQL and PostgreSQL)</p>
+                    <p>HTML5, CSS/SASS/SCSS, Bootstrap 4</p>
+                    <p>Version control: Git</p>
+                    <p>Misc: Yarn, NPM, Gulp</p>
+                </div>
+                
+                <div class="toolsfuture col-md">
+                    <h4>What am I learning these days?</h4>
+                    <p>Intermediate React</p>
+                    <p>Advanced SQL and Python for Data Science</p>
+                    <p>Non-relational databases: MongoDB</p>
+                </div>
+        </div>
 
-        <div class="techicons container">
+        <div class="techicons">
             <div class="mainrow">
                 <i class="fab fa-php" title="PHP"></i>
                 <i class="fab fa-laravel" title="Laravel"></i>
@@ -81,13 +103,11 @@
                 <i class="fab fa-react" title="React"></i>
             </div>
             <div class="secondaryrow">
-                <i class="fas fa-database" title="MySQL"></i>
+                <i class="fas fa-database" title="SQL"></i>
                 <i class="fab fa-html5" title="HTML 5"></i>
                 <i class="fab fa-sass" title="SCSS/SASS"></i>
                 <i class="fab fa-git-alt" title="Git"></i>
                 <i class="fab fa-github" title="Github"></i>
-            </div>
-            <div class="secondaryrow">
                 <i class="fab fa-yarn" title="Yarn"></i>
                 <i class="fab fa-npm" title="NPM"></i>
                 <i class="fab fa-gulp" title="Gulp"></i>

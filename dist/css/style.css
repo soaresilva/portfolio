@@ -179,16 +179,21 @@ button:hover {
   .findme .findmeicons {
     display: flex;
     justify-content: space-around;
-    max-width: 70vw;
     margin: auto;
     padding-top: 1rem;
     padding-bottom: 2rem; }
-    .findme .findmeicons .fab {
+    @media (min-width: 768px) {
+      .findme .findmeicons {
+        max-width: 60%; } }
+    .findme .findmeicons i {
       color: #3066be;
-      font-size: 4rem;
+      font-size: 3rem;
       align-items: center; }
-      .findme .findmeicons .fab:hover {
+      .findme .findmeicons i:hover {
         color: #002fa7; }
+      @media (min-width: 768px) {
+        .findme .findmeicons i {
+          font-size: 4rem; } }
 
 nav {
   background-color: #3c3744;
@@ -244,7 +249,6 @@ nav {
 
 .myportfolio {
   background-color: #b4c5e4;
-  margin-top: 4rem;
   padding-bottom: 2rem; }
   .myportfolio h1 {
     padding: 2rem;
@@ -359,31 +363,51 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: #fbfff1;
-  margin-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .skills .tools {
+      display: flex; }
+      .skills .tools p {
+        font-size: 1.3rem; } }
+  .skills .tools .toolspast, .skills .tools .toolsfuture {
+    padding: 2rem; }
+    .skills .tools .toolspast h4, .skills .tools .toolsfuture h4 {
+      font-weight: 600; }
+  .skills .tools .toolsfuture {
+    text-align: right; }
 
 .techicons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  font-size: 5rem;
-  width: 50%; }
+  display: none; }
+  @media (min-width: 768px) {
+    .techicons {
+      display: flex;
+      flex-direction: column;
+      font-size: 5rem;
+      width: 90%; } }
   .techicons .mainrow {
     align-items: center;
     justify-content: space-between;
-    margin: auto; }
+    margin: auto;
+    align-content: center; }
     .techicons .mainrow i {
       padding: 1rem; }
       .techicons .mainrow i:hover {
         color: #002fa7; }
   .techicons .secondaryrow {
     align-items: center;
-    flex-wrap: wrap;
     justify-content: space-between;
     margin: auto; }
-    .techicons .secondaryrow i {
-      padding: 1rem; }
-      .techicons .secondaryrow i:hover {
-        color: #002fa7; }
+    .techicons .secondaryrow i:hover {
+      color: #002fa7; }
+    @media (min-width: 768px) {
+      .techicons .secondaryrow i {
+        font-size: 3rem;
+        padding: 0.6rem; } }
+    @media (min-width: 960px) {
+      .techicons .secondaryrow i {
+        font-size: 4rem;
+        padding: 0.7rem; } }
 
 .welcome {
   background-color: #b4c5e4;
@@ -391,8 +415,12 @@ nav {
   font-size: 1rem;
   text-align: center;
   flex-direction: column;
-  font-size: 2em;
-  padding-bottom: 2rem; }
+  font-size: 2em; }
+  .welcome a {
+    color: #002fa7;
+    font-weight: 600; }
+    .welcome a:hover {
+      text-decoration: none; }
   .welcome h1 {
     color: #002fa7;
     margin: 0;
@@ -443,12 +471,17 @@ body {
   padding: 0;
   margin: 0; }
 
-.navbar a {
-  font-size: 1.5rem; }
+@media (max-width: 768px) {
+  .ml-auto {
+    margin: auto; } }
 
-@media (max-width: 375px) {
+.navbar {
+  flex-wrap: nowrap; }
   .navbar a {
-    font-size: 1.2rem; } }
+    font-size: 1.5rem; }
+  @media (max-width: 375px) {
+    .navbar a {
+      font-size: 1.2rem; } }
 
 .tagline {
   width: 100%;
